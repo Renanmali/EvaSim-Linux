@@ -33,12 +33,12 @@ def main():
                 print(f'Dado do QR Code: {qrcode_data}')
                 break
 
-            # Mostrar a imagem para facilitar o alinhamento do QR Code
-            cv2.imshow("QR Code Scanner", frame)
+            # # Mostrar a imagem para facilitar o alinhamento do QR Code
+            # cv2.imshow("QR Code Scanner", frame)
 
-            # Encerrar se a tecla 'q' for pressionada
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
+            # # Encerrar se a tecla 'q' for pressionada
+            # if cv2.waitKey(1) & 0xFF == ord('q'):
+            #     break
     except KeyboardInterrupt:
         pass
     

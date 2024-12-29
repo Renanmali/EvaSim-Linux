@@ -215,9 +215,9 @@ def run():
                         run = False
                     reset_evaluation()
                     timer += t
-                cv2.imshow("Facial Expression Cam", frame)
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
+                # cv2.imshow("Facial Expression Cam", frame)
+                # if cv2.waitKey(1) & 0xFF == ord('q'):
+                #     break
             else:
                 break
 
