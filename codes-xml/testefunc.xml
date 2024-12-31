@@ -1,4 +1,8 @@
-<evaml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Template" xsi:noNamespaceSchemaLocation="../evaml-schema/evaml_schema.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<evaml
+  name="Template" 
+  xsi:noNamespaceSchemaLocation="../evaml-schema/evaml_schema.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <settings>
     <voice tone="pt-BR_IsabelaV3Voice" />
     <lightEffects mode="ON" />
