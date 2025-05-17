@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <evaml
-  name="Testando_Tabuada"
+  name="Jogo_Tabuada"
   xsi:noNamespaceSchemaLocation="../evaml-schema/evaml_schema.xsd"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <settings>
@@ -12,7 +12,7 @@
     <counter var="pont_min" op="=" value="0" />
     <useMacro macro="Apresenta" />
     <useMacro macro="Fixa_dolar" />
-    <talk>$1, vamos jogar o jogo da tabuada. Mas, antes de começar o jogo você gostaria de saber nossas regras?</talk>
+    <talk>$1, vamos jogar o jogo da tabuada. Mas, antes de começar o jogo, você gostaria de saber nossas regras?</talk>
     <listen />
     <switch var="$">
       <case op="exact" value="sim">
@@ -26,7 +26,7 @@
     <useMacro macro="Nivelamento" />
     <switch var="pont_min">
       <case op="lt" value="2">
-        <talk>Então agora iniciaremos o nível 1, vamos testar o seu conhecimento nas tabuadas</talk>
+        <talk>Então agora iniciaremos o nível 1, vamos testar o seu conhecimento nas tabuadas.</talk>
         <counter var="pontos" op="=" value="0" />
         <useMacro macro="Multiplicando" />
         <counter var="ponto" op="=" value="0" />
@@ -38,7 +38,7 @@
        <switch var="ponto">
         <case op="eq" value="3">
           <counter var="ponto" op="=" value="0" />
-          <talk>Que bom que voce chegou aqui no nível dois</talk>
+          <talk>Que bom que voce chegou aqui no nível dois!</talk>
           <talk>Podemos começar?</talk>
           <listen />
           <switch var="$">
@@ -51,7 +51,7 @@
               <switch var="ponto">
                 <case op="gte" value="2">
                   <counter var="ponto" op="=" value="0" />
-                  <talk>Que bom que voce chegou aqui no nível três</talk>
+                  <talk>Que bom que voce chegou aqui no nível três!</talk>
                   <talk>Podemos começar?</talk>
                   <listen />
                   <switch var="$">
@@ -86,7 +86,7 @@
           <case op="lte" value="6">
             <counter var="ponto" op="=" value="0" />
             <counter var="pontos" op="=" value="3" />
-            <talk>Que bom que voce chegou aqui no nível dois</talk>
+            <talk>Que bom que voce chegou aqui no nível dois!</talk>
             <talk>Podemos começar?</talk>
             <listen />
             <switch var="$">
@@ -99,7 +99,7 @@
                 <switch var="ponto">
                   <case op="gte" value="2">
                     <counter var="ponto" op="=" value="0" />
-                    <talk>Que bom que voce chegou aqui no nível três</talk>
+                    <talk>Que bom que voce chegou aqui no nível três!</talk>
                     <talk>Podemos começar?</talk>
                     <listen />
                     <switch var="$">
@@ -130,7 +130,7 @@
               <case op="gte" value="19">
                 <counter var="pontos" op="=" value="6" />
                 <counter var="ponto" op="=" value="0" />
-                <talk>Que bom que voce chegou aqui no nível três</talk>
+                <talk>Que bom que voce chegou aqui no nível três!</talk>
                 <talk>Podemos começar?</talk>
                 <listen />
                 <switch var="$">
@@ -150,7 +150,7 @@
               <default>
                 <counter var="ponto" op="=" value="0" />
             <counter var="pontos" op="=" value="3" />
-            <talk>Que bom que voce chegou aqui no nível dois</talk>
+            <talk>Que bom que voce chegou aqui no nível dois!</talk>
             <talk>Podemos começar?</talk>
             <listen />
             <switch var="$">
@@ -163,7 +163,7 @@
                 <switch var="ponto">
                   <case op="gte" value="2">
                     <counter var="ponto" op="=" value="0" />
-                    <talk>Que bom que voce chegou aqui no nível três</talk>
+                    <talk>Que bom que voce chegou aqui no nível três!</talk>
                     <talk>Podemos começar?</talk>
                     <listen />
                     <switch var="$">
@@ -204,7 +204,7 @@
     <useMacro macro="Nivelamento" />
     <switch var="pont_min">
       <case op="lt" value="2">
-        <talk>Então agora iniciaremos o nível 1, vamos testar o seu conhecimento nas tabuadas</talk>
+        <talk>Então agora iniciaremos o nível 1, vamos testar o seu conhecimento nas tabuadas.</talk>
         <counter var="pontos" op="=" value="0" />
         <useMacro macro="Multiplicando" />
         <counter var="ponto" op="=" value="0" />
@@ -216,7 +216,7 @@
        <switch var="ponto">
         <case op="eq" value="3">
           <counter var="ponto" op="=" value="0" />
-          <talk>Que bom que voce chegou aqui no nível dois</talk>
+          <talk>Que bom que voce chegou aqui no nível dois!</talk>
           <talk>Podemos começar?</talk>
           <listen />
           <switch var="$">
@@ -229,7 +229,7 @@
               <switch var="ponto">
                 <case op="gte" value="2">
                   <counter var="ponto" op="=" value="0" />
-                  <talk>Que bom que voce chegou aqui no nível três</talk>
+                  <talk>Que bom que voce chegou aqui no nível três!</talk>
                   <talk>Podemos começar?</talk>
                   <listen />
                   <switch var="$">
@@ -264,7 +264,7 @@
           <case op="lte" value="6">
             <counter var="ponto" op="=" value="0" />
             <counter var="pontos" op="=" value="3" />
-            <talk>Que bom que voce chegou aqui no nível dois</talk>
+            <talk>Que bom que voce chegou aqui no nível dois!</talk>
             <talk>Podemos começar?</talk>
             <listen />
             <switch var="$">
@@ -277,7 +277,7 @@
                 <switch var="ponto">
                   <case op="gte" value="2">
                     <counter var="ponto" op="=" value="0" />
-                    <talk>Que bom que voce chegou aqui no nível três</talk>
+                    <talk>Que bom que voce chegou aqui no nível três!</talk>
                     <talk>Podemos começar?</talk>
                     <listen />
                     <switch var="$">
@@ -308,7 +308,7 @@
               <case op="gte" value="19">
                 <counter var="pontos" op="=" value="6" />
                 <counter var="ponto" op="=" value="0" />
-                <talk>Que bom que voce chegou aqui no nível três</talk>
+                <talk>Que bom que voce chegou aqui no nível três!</talk>
                 <talk>Podemos começar?</talk>
                 <listen />
                 <switch var="$">
@@ -328,7 +328,7 @@
               <default>
                 <counter var="ponto" op="=" value="0" />
             <counter var="pontos" op="=" value="3" />
-            <talk>Que bom que voce chegou aqui no nível dois</talk>
+            <talk>Que bom que voce chegou aqui no nível dois!</talk>
             <talk>Podemos começar?</talk>
             <listen />
             <switch var="$">
@@ -341,7 +341,7 @@
                 <switch var="ponto">
                   <case op="gte" value="2">
                     <counter var="ponto" op="=" value="0" />
-                    <talk>Que bom que voce chegou aqui no nível três</talk>
+                    <talk>Que bom que voce chegou aqui no nível três!</talk>
                     <talk>Podemos começar?</talk>
                     <listen />
                     <switch var="$">
@@ -454,7 +454,7 @@
       <random min="10" max="10" />
     </macro>
     <macro id="Multiplicando">
-      <random min="1" max="10" />
+      <random min="2" max="10" />
       <switch var="$">
         <case op="exact" value="1">
           <counter var="multiplicando" op="=" value="1" />
@@ -538,6 +538,8 @@
     </macro>
     <macro id="Pontuou">
       <evaEmotion emotion="HAPPY" />
+      <led animation="HAPPY" />
+      <motion type="2UP_RIGHT" right-arm="UP" left-arm="DOWN"/>
       <random min="1" max="3" />
       <switch var="$">
         <case op="exact" value="1">
@@ -553,12 +555,12 @@
           <useMacro macro="Pont_total" />
         </case>
       </switch>
-      <motion type="YES" />
       <audio source="efx-aplausos-bom" block="TRUE" />
       <counter var="ponto" op="+" value="1" />
       <talk>Parabéns, voce ganhou um ponto </talk>
       <evaEmotion emotion="NEUTRAL" />
       <light state="ON" color="WHITE"/>
+      <motion type="CENTER" left-arm="POSITION 0" right-arm="POSITION 0"/>
     </macro>
     <macro id="Não_pontuou">
       <evaEmotion emotion="SAD" />
@@ -574,18 +576,20 @@
           <light state="ON" color="BLACK"/>
         </case>
       </switch>
-      <motion type="NO" />
+      <motion type="NO" left-arm="UP" right-arm="UP"/>
+      <led animation="SAD" />
       <talk>A resposta dessa operação é #multiplicando</talk>
       <talk>Que pena, dessa vez você não pontuou, vamos para a próxima</talk>
       <light state="ON" color="WHITE"/>
       <evaEmotion emotion="NEUTRAL" />
+      <motion left-arm="POSITION 0" right-arm="POSITION 0"/>
     </macro>
     <macro id="materiais">
       <talk>Ana tem #multiplicando caixas de canetas.  Cada caixa contém $ canetas.    Quantas canetas no total tem Ana? / 
         Na escola de Alice existem #multiplicando salas de aula, e em cada uma existem $ cadeiras. Quantas cadeiras existem na escola de Alice? /
         João comprou #multiplicando brigadeiros. Cada brigadeiro custa $ reais.        Quanto João pagou nos brigadeiros? /
         Renan tem #multiplicando sacos com $ balas em cada um. Quantas balas há em todos os sacos? /
-        Na mesa da professora há #multiplicando gavetas com $ livros cada.   Quantos livros têm na mesa da professora?
+        Na mesa da professora há #multiplicando gavetas com $ livros cada.   Quantos livros há na mesa da professora?
       </talk>
     </macro>
     <macro id="nível_2">
@@ -765,14 +769,14 @@
       </switch>
     </macro>
     <macro id="problemas">
-      <talk>Um jogador comprou #multiplicando blusas que custam $ reais cada uma. Quanto ele gastou em blusas ?/
+      <talk>Um jogador comprou #multiplicando blusas que custam $ reais cada uma. Quanto ele gastou em blusas?/
         Um caixote tem #multiplicando maçãs. Quantas maçãs terão $ caixotes?/
-        Marcelo estocou #multiplicando caixas contendo $ tubos de cola cada  caixa. Quantos tubos Marcelo estocou?/
-        Joana precisa encher #multiplicando copos de $ ml com refrigerante. Qual a quantidade de refrigerante que ele precisará? /
+        Marcelo estocou #multiplicando caixas contendo $ tubos de cola em cada  caixa. Quantos tubos Marcelo estocou?/
+        Joana precisa encher #multiplicando copos de $ ml com refrigerante. Qual a quantidade total de refrigerante de que ele precisará? /
         Ana Carolina usa #multiplicando novelos de lã para fazer uma blusa.  Quantos novelos de lã Ana precisará para fazer $ blusas?/
-        Na fazenda de José tem #multiplicando vacas leiteiras. Cada vaca produz $ litros de leite. Quantos litros de leite produz no total?/
+        Na fazenda de José tem #multiplicando vacas leiteiras. Cada vaca produz $ litros de leite. Quantos litros de leite são produzidos no total?/
         Para fazer um bolo são necessários #multiplicando ovos. Quantos ovos serão necessários para fazer $ bolos?/
-        Bruna comprou #multiplicando caixas de morango para vender. Em cada  caixa contém $ morangos. Quantos morangos Bruna comprou?
+        Bruna comprou #multiplicando caixas de morango para vender. Cada  caixa contém $ morangos. Quantos morangos Bruna comprou?
       </talk>
     </macro>
     <macro id="nível_3">
@@ -1005,7 +1009,7 @@
       <talk> $1, o jogo da tabuada funciona da seguinte maneira.</talk>
       <talk>Cada pergunta terá uma pontuação e seu objetivo final é conseguir acertar todas as perguntas, totalizando 9 pontos. 
         Caso já inicie em um nível avançado, todos os pontos dos níveis anteriores ja serão automaticamente conquistados por você.</talk>
-      <talk>Ao final de cada nível terá uma pergunta para saber se quer jogar ou se quer parar. Ao fim de tudo, será dito sua pontuação final, que você tenha um bom jogo!</talk>
+      <talk>Ao final de cada nível farei uma pergunta para saber se quer jogar mais ou se quer parar. Ao fim de tudo, direi sua pontuação final. Espero que você goste do jogo!</talk>
       <light state="ON" color="WHITE"/>
       <evaEmotion emotion="NEUTRAL" />
     </macro>
@@ -1021,9 +1025,12 @@
     </macro>
     <macro id="final">
       <evaEmotion emotion="HAPPY" />
+      <motion type="2UP_LEFT" left-arm="SHAKE1" right-arm="SHAKE1"/>
+      <led animation="RAINBOW" />
       <audio source="efx-mario-end-03" block="TRUE" />
       <light state="ON" color="BLACK"/>
-      <talk>$1, então encerramos por aqui a nossa sessão, você conseguiu um total de #pontos pontos, torço para que tenha gostado da experiência de ter jogado comigo, estarei te esperando para jogarmos em outro momento.</talk>
+      <talk>$1, então encerramos por aqui a nossa sessão. Você conseguiu um total de #pontos pontos. Tôrço para que tenha gostado da experiência de ter jogado comigo. Estarei te esperando para jogarmos em outro momento.</talk>
+      <motion type="CENTER" left-arm="POSITION 0" right-arm="POSITION 0"/>
     </macro>
     <macro id="Nivelamento_3">
         <random min="6" max="9" />
@@ -1064,18 +1071,20 @@
             <listen />
             <switch var="$">
                 <case op="eq" value="multiplicando">
-                    <counter var="pont_min" op="+" value="15" />
-                    <talk>Parabéns.</talk>
+                  <counter var="pont_min" op="+" value="15" />
+                  <audio source="successed" block="TRUE" />
+                  <talk>Parabéns!</talk>
                 </case>
                 <default>
-                    <talk>A resposta certa é #multiplicando.       Vamos para a próxima, esta foi por pouco.</talk>
+                  <audio source="negative_beep" block="TRUE" />
+                  <talk>A resposta certa é #multiplicando. Vamos para a próxima, esta foi por pouco.</talk>
                 </default>
             </switch>
     </macro>
     <macro id="Nivelamento_2">
         <random min="2" max="5" />
-        <talk>Em um pote cabe #multiplicando canetas.      Quantas canetas serão necessárias para colocarmos em $ potes? /
-            Em uma sala possui #multiplicando computadores com $ telas.    Quantas telas existem nesta sala?
+        <talk>Em um pote cabem #multiplicando canetas.      Quantas canetas serão necessárias para colocarmos em $ potes? /
+            Uma sala possui #multiplicando computadores com $ telas.    Quantas telas existem nesta sala?
         </talk>
         <switch var="$">
             <case op="exact" value="1">
@@ -1113,9 +1122,11 @@
         <switch var="$">
             <case op="eq" value="multiplicando">
                 <counter var="pont_min" op="+" value="3" />
-                <talk>Parabéns.</talk>
+                <audio source="successed" block="TRUE" />
+                <talk>Parabéns!</talk>
             </case>
             <default>
+                <audio source="negative_beep" block="TRUE" />
                 <talk>A resposta certa é #multiplicando.       Vamos para a próxima, esta foi por pouco.</talk>
             </default>
         </switch>
@@ -1159,9 +1170,11 @@
         <switch var="$">
             <case op="eq" value="multiplicando">
                 <counter var="pont_min" op="+" value="1" />
-                <talk>Parabéns.</talk>
+                <audio source="successed" block="TRUE" />
+                <talk>Parabéns!</talk>
             </case>
             <default>
+                <audio source="negative_beep" block="TRUE" />
                 <talk>A resposta certa é #multiplicando.       Vamos para a próxima, esta foi por pouco.</talk>
             </default>
         </switch>
