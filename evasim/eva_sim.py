@@ -840,6 +840,37 @@ def exec_comando(node):
             lock_thread_pop()
             ledAnimation("LISTEN")
             # Pop up window closing function for the <return> key)
+
+            lock_thread_pop()
+        ledAnimation("LISTEN")
+        
+        if gui.chk_voice_value.get() == 1 :
+
+            r = sr.Recognizer()
+
+            with sr.Microphone() as source:
+                r.adjust_for_ambient_noise(source)
+                audio = r.listen(source)
+
+
+                # recognize speech using google
+
+                try:
+                    transcript = r.recognize_google(audio, language="pt-BR")
+                    print(transcript)
+
+                    var = StringVar(value=transcript)
+
+                    eva_memory.var_dolar.append([var.get(), "<listen>"])
+                    gui.terminal.insert(INSERT, "\nstate: Listening : var=$" + ", value=" + eva_memory.var_dolar[-1][0])
+                    tab_load_mem_dollar()
+                    gui.terminal.see(tkinter.END)
+                    unlock_thread_pop()
+                
+                except Exception as e:
+                    print("Error :  " + str(e))
+        elif gui.chk_voice_value.get() == 0:
+            # função de fechamento da janela pop up para a tecla <return>
             def fechar_pop_ret(self): 
                 print(var.get())
                 if node.get("var") == None: # Maintains compatibility with the use of the $ variable
